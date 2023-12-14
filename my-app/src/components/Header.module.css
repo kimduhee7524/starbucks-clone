@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/* 전역 */
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+.header{
+    background-color: royalblue;;
+}
+.inner{
+    width: 1100px;
+    height: 120px;
+    margin: 0 auto;  /* 수평 가운데 정렬 */
+    background-color: orange;;
+    position: relative;
+}
+.logo{
+    height: 75px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: none;
+}
+.img{
+    display: block;
+}
+.subMenu{
+    display: flex;
+
+}
+
+.menu{
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.menu a {
+    font-size: 12px;
+    padding: 11px 16px;
+    display: block;
+    color: #656565;
+}
+.menu a:hover{
+    color: #000;
+}
+.menu li{
+    position: relative;
+}
+.menu li::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: black;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+.menu li:first-child::before{
+    display: none;
+}
+
+
+.search{
+    height: 34px;
+    position: relative;
+    align-items: center; /* 수직 정렬 */
+  }
+.search input{
+    width: 36px;
+    height: 34px;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color: #777;
+    font-size: 12px;
+    transition: width .4s; /*넓이 변환 될떄 지속 시간 */
+}
+.search input:focus{
+    width: 190px;
+    border-color: #669900;
+}
+.material-symbols-outlined{
+    height: 24px;
+  }
